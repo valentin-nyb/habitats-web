@@ -1,0 +1,156 @@
+import { Property } from '@/types';
+
+// Fallback seed data — used when Supabase is empty or unavailable
+export const FALLBACK_PROPERTIES: Property[] = [
+  {
+    id: '1',
+    title: 'Kyoto Zen House',
+    location: 'Kyoto, Japan',
+    country: 'Japan',
+    price_text: '$2,800',
+    price_usd: 2800,
+    image_url: 'https://images.unsplash.com/photo-1599809275372-b7f58db537a2?q=75&w=800',
+    beds: 2,
+    baths: 1,
+    sqft: 120,
+    lng: 135.7681,
+    lat: 35.0116,
+    wifi_speed: '200 Mbps',
+    air_quality: 'Pristine (12 AQI)',
+    wellness_proximity: 'On-site Meditation Dojo',
+    tech_integration: 'Whoop + Lutron',
+    lifestyle_tags: ['yoga', 'meditation', 'zen', 'nature'],
+    type: 'rent',
+    badge_text: 'Featured',
+    description:
+      'A sanctuary of peace in the historic district of Kyoto. Tatami floors, a private garden with a koi pond, and a dedicated meditation room. Surrounded by ancient temples and the world\'s most disciplined wellness culture.',
+  },
+  {
+    id: '2',
+    title: 'Lisbon Creative Hub',
+    location: 'Lisbon, Portugal',
+    country: 'Portugal',
+    price_text: '$1,250',
+    price_usd: 1250,
+    image_url: 'https://images.unsplash.com/photo-1497366216548-37526070297c?q=75&w=800',
+    beds: 4,
+    baths: 3,
+    sqft: 210,
+    lng: -9.1393,
+    lat: 38.7223,
+    wifi_speed: '1 Gbps',
+    air_quality: 'Moderate (60 AQI)',
+    wellness_proximity: 'Crossfit & Spa Access',
+    tech_integration: '10G Fiber + Apple Home',
+    lifestyle_tags: ['co-work', 'digital nomad', 'food scene', 'arts'],
+    type: 'co-live',
+    badge_text: 'Popular',
+    description:
+      'Modern co-living space designed for digital nomads. Features soundproof meeting booths, a rooftop yoga deck, and direct access to the best espresso in town. NHR tax regime eligible.',
+  },
+  {
+    id: '3',
+    title: 'Camps Bay Villa',
+    location: 'Cape Town, SA',
+    country: 'South Africa',
+    price_text: '$3,500',
+    price_usd: 3500,
+    image_url: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=75&w=800',
+    beds: 3,
+    baths: 2,
+    sqft: 370,
+    lng: 18.3775,
+    lat: -33.9573,
+    wifi_speed: '1 Gbps',
+    air_quality: 'Excellent (24 AQI)',
+    wellness_proximity: '2 min walk to Yoga Barn',
+    tech_integration: 'Oura Ring + Starlink',
+    lifestyle_tags: ['surf', 'wellness', 'nature', 'investment'],
+    type: 'buy',
+    badge_text: 'For Sale',
+    description:
+      'Perched above the Atlantic Ocean with uninterrupted 180° views. Architect-designed with biophilic interiors, an infinity pool, and private hiking access into Table Mountain National Park.',
+  },
+  {
+    id: '4',
+    title: 'Shoreditch City Loft',
+    location: 'London, UK',
+    country: 'United Kingdom',
+    price_text: '£4,900',
+    price_usd: 6200,
+    image_url: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=75&w=800',
+    beds: 1,
+    baths: 1,
+    sqft: 85,
+    lng: -0.0763,
+    lat: 51.5246,
+    wifi_speed: 'Starlink',
+    air_quality: 'HEPA Filtration',
+    wellness_proximity: 'Bio-hacking Corner',
+    tech_integration: 'Circadian Lighting',
+    lifestyle_tags: ['biohack', 'urban', 'co-work', 'tech'],
+    type: 'rent',
+    badge_text: 'Verified',
+    description:
+      'Ultra-modern loft in Shoreditch designed for the high-performance urbanite. Features circadian lighting systems, HEPA air filtration, and a dedicated bio-hacking corner. Walking distance to London\'s best co-working spaces and artisan coffee roasters.',
+  },
+  {
+    id: '5',
+    title: 'Miami Beach Penthouse',
+    location: 'Miami, USA',
+    country: 'United States',
+    price_text: '$8,500',
+    price_usd: 8500,
+    image_url: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=75&w=800',
+    beds: 3,
+    baths: 2,
+    sqft: 290,
+    lng: -80.1918,
+    lat: 25.7617,
+    wifi_speed: '10 Gbps',
+    air_quality: 'Ocean Fresh (8 AQI)',
+    wellness_proximity: 'Rooftop Pool + Fitness',
+    tech_integration: 'Smart Home + EV Charging',
+    lifestyle_tags: ['investment', 'luxury', 'surf', 'nightlife'],
+    type: 'buy',
+    badge_text: 'Investment Grade',
+    description:
+      'Full-floor penthouse with direct ocean views, private rooftop terrace, and concierge service. Prime investment asset in one of the fastest-appreciating zip codes in North America.',
+  },
+  {
+    id: '6',
+    title: 'Mendoza Wine Estate',
+    location: 'Mendoza, Argentina',
+    country: 'Argentina',
+    price_text: '$1,800',
+    price_usd: 1800,
+    image_url: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?q=75&w=800',
+    beds: 4,
+    baths: 3,
+    sqft: 450,
+    lng: -68.8272,
+    lat: -32.8895,
+    wifi_speed: '500 Mbps',
+    air_quality: 'Mountain Pure (5 AQI)',
+    wellness_proximity: 'Private Vineyard & Spa',
+    tech_integration: 'Solar + Smart Grid',
+    lifestyle_tags: ['nature', 'farm', 'investment', 'family'],
+    type: 'buy',
+    badge_text: 'ROI Pick',
+    description:
+      'Boutique wine estate at the foot of the Andes. Includes 3 hectares of malbec vines, a guest lodge, and full solar infrastructure. Outstanding ROI potential via agrotourism and wine exports.',
+  },
+];
+
+export function searchProperties(properties: Property[], query: string): Property[] {
+  if (!query.trim()) return properties;
+  const q = query.toLowerCase();
+  return properties.filter(
+    (p) =>
+      p.title.toLowerCase().includes(q) ||
+      p.location.toLowerCase().includes(q) ||
+      p.country.toLowerCase().includes(q) ||
+      p.description.toLowerCase().includes(q) ||
+      p.lifestyle_tags?.some((tag) => tag.toLowerCase().includes(q))
+  );
+}
